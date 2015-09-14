@@ -28,7 +28,7 @@ $(function() {
 
     var place = new Place(name, country, city, notes, date, []);
     var date = (place['date'].getMonth() + 1) + "/" + place['date'].getDate() + "/" + place['date'].getFullYear();
-
+  debugger;
     $(".new-people").each(function() {
       var person = $(this).find("input.new-person").val();
       place['people'].push(person);

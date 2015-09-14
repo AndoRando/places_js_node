@@ -4,7 +4,7 @@ var app = express();
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(req, res) {
-  app.render('index.html');
+  res.sendfile('index.html', {root: __dirname} );
 });
 
 
