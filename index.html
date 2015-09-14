@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <title>Places I've Been</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Places I've Been</h1>
+
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Add a place:</h2>
+        <form id="new-place">
+          <div class="form-group">
+            <label for="new-name">Name</label>
+            <input type="text" class="form-control" id="new-name">
+          </div>
+          <div class="form-group">
+            <label for="new-country">Country</label>
+            <input type="text" class="form-control" id="new-country">
+          </div>
+
+          <div class="form-group">
+            <label for="new-city">City</label>
+            <input type="text" class="form-control" id="new-city">
+          </div>
+          <div class="form-group">
+            <label for="new-notes">Notes</label>
+            <input type="text" class="form-control" id="new-notes">
+          </div>
+          <div class="form-group">
+            <label for="new-date">Date</label>
+            <input type="date" class="form-control" id="new-date">
+          </div>
+          <div id="people">
+            <div class="form-group new-people">
+              <label for="new-person">Person</label>
+              <input type="text" class="form-control new-person">
+            </div>
+          </div>
+          <span class="btn btn-primary" id="add-person">Another person</span>
+          <button type="submit" class="btn">Add</button>
+        </form>
+
+        <h2>Places:</h2>
+        <ul id="places">
+
+        </ul>
+      </div>
+
+      <div class="col-md-6">
+        <div id="show-place">
+          <h2></h2>
+
+          <p>Country: <span class="country"></span></p>
+          <p>City: <span class="city"></span></p>
+          <p>Date: <span class="date"></span></p>
+          <p>Notes: <span class="notes"></span></p>
+          <p>People:</p>
+          <ul id="people-list">
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
