@@ -1,6 +1,7 @@
 #	Places I've been
 
-This simple Node app allows you to add.
+This simple Node app allows you to build place objects and add them to a list.
+Unfortunately, there is no back-end for this project :(
 
 ##	Setup
 
