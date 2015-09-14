@@ -1,6 +1,6 @@
 'use strict';
 
-function Place(name, country, city, notes, date, people) {
+var Place = function(name, country, city, notes, date, people) {
   this.name = name,
   this.country = country,
   this.city = city,
@@ -53,3 +53,5 @@ $(function() {
   });
 
 });
+
+module.exports = Place;
